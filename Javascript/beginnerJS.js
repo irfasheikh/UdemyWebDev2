@@ -62,7 +62,7 @@ function main(){
    move();
 
 }
-//lots of repeated code so think of a function, 
+//lots of repeated code so think of a function,
 
 
 function moveFourTimes(){
@@ -78,4 +78,13 @@ function main () {
    moveFourTimes ();
    turnLeft();
    moveFourTimes();
+}
+
+function getMilk (bottles){
+    var cost = bottles * 1.5;
+}
+
+function convert(input) {
+	var minutes =
+  var seconds = 
 }
