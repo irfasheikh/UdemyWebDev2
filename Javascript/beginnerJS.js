@@ -86,7 +86,12 @@ function main () {
 //
 // getMilk(2);
 
- 
+
+function getMilk(money) {
+  var numberOfBottles = Math.floor(money / 1.5);
+  console.log("buy " + numberOfBottles + " bottles of milk")
+
+}
 
 
 
