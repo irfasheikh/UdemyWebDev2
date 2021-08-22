@@ -80,11 +80,20 @@ function main () {
    moveFourTimes();
 }
 
-function getMilk (bottles){
-    var cost = bottles * 1.5;
-}
+// function getMilk (bottles){
+//     var cost = bottles * 1.5;
+// }
+//
+// getMilk(2);
+
+ 
+
+
+
+
+
 
 function convert(input) {
 	var minutes =
-  var seconds = 
+  var seconds =
 }
