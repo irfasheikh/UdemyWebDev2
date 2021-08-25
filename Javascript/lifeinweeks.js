@@ -3,7 +3,11 @@
 function lifeInWeeks (age){
 
   var yearsLeft = 90 - age;
+  var daysLeft = yearsLeft * 365;
   var weeksLeft = yearsLeft * 52;
-  var monthsLeft = weeksLeft * 12;
-  var daysLeft = monthsLeft * 365;
+  var monthsLeft = yearsLeft * 12;
+
+
+
+  console.log("You have " +  )
 }
