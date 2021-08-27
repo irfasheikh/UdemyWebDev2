@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Clock</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <script type="text/JavaScript">
+
+
+    function timeNow()
+    {
+      var time = new Date(); //this gives the current time
+
+      var hours = time.getHours();
+      var minutes = time.getMinutes();
+      var seconds = time.getSeconds();
+
+      // setInterval(timeNow, 1000);
+
+      // hours = (hours < 10 ? "0" : "") + hours; //add 0 in front of hr if less than 10
+
+      minutes = (minutes < 10 ? "0" : "") + minutes; //add a 0 in front of mins if less than 10
+
+      seconds = (seconds < 10 ? "0" : "") + seconds; // add 0 in front of secs if less than 10
+
+      var dayNight = (hours < 12) ? "AM" : "PM"; //display am or pm on clocks
+
+      hours = (hours > 12) ? hours - 12 : hours;
+      hours = (hours == 0) ? 12 : hours; //12 hr clock
+
+      var currentTime = hours + ":" + minutes + ":" + seconds + " " + dayNight; //00:00:00 AM display
+
+
+
+      document.getElementById("clock").innerHTML = currentTime;
+    }
+
+    timeNow(); // call function
+
+  </script>
+
+</head>
+
+<body onload="timeNow(); setInterval('timeNow()', 1000 )">
+  <!-- <script src="clocksolution.js"></script> -->
+  <div id="clock"></div>
+
+
+
+
+
+</body>
+
+</html>
