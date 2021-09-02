@@ -10,4 +10,6 @@ function numberOfLegs {
   var chickens = 2;
   var cows =4;
   var pigs = 4;
+
+  
 }
